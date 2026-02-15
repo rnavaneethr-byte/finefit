@@ -1,9 +1,8 @@
- 'use client';
+"use client";
 import Image from 'next/image'
 import Link from 'next/link'
 import useScrollReveal from '../../utils/useScrollReveal';
 import ScrollToTop from '../../components/ScrollToTop';
- 'use client';
 export default function AboutPage() {
   useScrollReveal();
   return (
