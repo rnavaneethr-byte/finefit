@@ -1,6 +1,7 @@
 'use client';
 
 
+
 import Header from '../components/Header';
 import HeroSection from '../components/herosection';
 import IntroSection from '../components/IntroSection';
@@ -11,9 +12,12 @@ import TestimonialSection from '../components/TestimonialSection';
 import FeaturesSection from '../components/FeaturesSection';
 import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
+import useScrollReveal from '../utils/useScrollReveal';
+import ScrollToTop from '../components/ScrollToTop';
 
 
 export default function HomePage() {
+  useScrollReveal();
   return (
     <div className="font-serif text-neutral-800 bg-white">
       <Header />
@@ -25,7 +29,7 @@ export default function HomePage() {
       <TestimonialSection />
       <FeaturesSection />
       <CTASection />
-     
+      <ScrollToTop />
     </div>
   );
 }

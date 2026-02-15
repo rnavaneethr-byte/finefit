@@ -10,8 +10,8 @@ export default function WinterTailoringSection() {
             From staple overcoats to expertly tailored suiting, discover winter tailoring made for the season’s demands.
           </p>
           <div className="flex flex-wrap gap-4 mb-6">
-            <a href="#" className="px-6 py-3 bg-black text-white font-medium rounded-full text-base hover:bg-gray-800 transition">Shop Now</a>
-            <a href="#" className="px-6 py-3 border border-black text-black font-medium rounded-full text-base hover:bg-gray-100 transition">Discover Now</a>
+            <a href="/contact" className="px-6 py-3 bg-black text-white font-medium rounded-full text-base hover:bg-gray-800 transition">CONTACT US</a>
+            <a href="/contact" className="px-6 py-3 border border-black text-black font-medium rounded-full text-base hover:bg-gray-100 transition">BOOK APPOINTMENT</a>
           </div>
           <div className="flex flex-wrap gap-4 text-sm text-gray-600">
             <a href="#" className="underline hover:text-black">London</a>

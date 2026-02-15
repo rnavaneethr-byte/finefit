@@ -21,8 +21,8 @@ const FeaturesSection = () => (
             </svg>
           </div>
         </div>
-        <h3 className="text-xl tracking-wider mb-4 font-light">FINEST MATERIALS</h3>
-        <p className="text-sm leading-relaxed text-neutral-600">
+        <h3 className="text-xl tracking-wider mb-4 font-light scroll-reveal">FINEST MATERIALS</h3>
+        <p className="text-sm leading-relaxed text-neutral-600 scroll-reveal">
           We source only the very finest materials from around the world to ensure 
           exceptional quality in every garment.
         </p>
@@ -45,8 +45,8 @@ const FeaturesSection = () => (
             </svg>
           </div>
         </div>
-        <h3 className="text-xl tracking-wider mb-4 font-light">HANDCRAFTED</h3>
-        <p className="text-sm leading-relaxed text-neutral-600">
+        <h3 className="text-xl tracking-wider mb-4 font-light scroll-reveal">HANDCRAFTED</h3>
+        <p className="text-sm leading-relaxed text-neutral-600 scroll-reveal">
           Old world hand craftsmanship meets modern precision, creating garments of 
           unparalleled quality and attention to detail.
         </p>
@@ -69,8 +69,8 @@ const FeaturesSection = () => (
             </svg>
           </div>
         </div>
-        <h3 className="text-xl tracking-wider mb-4 font-light">PERSONAL SERVICE</h3>
-        <p className="text-sm leading-relaxed text-neutral-600">
+        <h3 className="text-xl tracking-wider mb-4 font-light scroll-reveal">PERSONAL SERVICE</h3>
+        <p className="text-sm leading-relaxed text-neutral-600 scroll-reveal">
           Discrete, personal service ensuring every client receives individual attention 
           and a truly bespoke experience.
         </p>

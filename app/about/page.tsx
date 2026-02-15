@@ -1,7 +1,11 @@
+
 import Image from 'next/image'
 import Link from 'next/link'
+import useScrollReveal from '../../utils/useScrollReveal';
+import ScrollToTop from '../../components/ScrollToTop';
 
 export default function AboutPage() {
+  useScrollReveal();
   return (
     <>
       {/* Hero */}
@@ -15,8 +19,8 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4 animate-fadeInUp">
-            <p className="section-subtitle" style={{ color: '#C8A16F' }}>Our Story</p>
-            <h1 className="font-serif text-5xl md:text-6xl">About FineFit</h1>
+            <p className="section-subtitle scroll-reveal" style={{ color: '#C8A16F' }}>Our Story</p>
+            <h1 className="font-serif text-5xl md:text-6xl scroll-reveal">About FineFit</h1>
           </div>
         </div>
       </section>
@@ -26,18 +30,18 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="animate-slideInLeft">
-              <p className="section-subtitle">Our Heritage</p>
-              <h2 className="section-title">A Journey of Excellence</h2>
+              <p className="section-subtitle scroll-reveal">Our Heritage</p>
+              <h2 className="section-title scroll-reveal">A Journey of Excellence</h2>
               <div className="space-y-6 text-gray-600 leading-relaxed">
-                <p className="text-lg">
+                <p className="text-lg scroll-reveal">
                   Founded in 1989 as Chandra Textiles, our brand has evolved into FineFit—a testament 
                   to our commitment to timeless elegance and uncompromising craftsmanship.
                 </p>
-                <p className="text-lg">
+                <p className="text-lg scroll-reveal">
                   What began as a modest tailoring house has flourished into a luxury atelier serving 
                   discerning clients who understand that true style is measured in precision and quality.
                 </p>
-                <p className="text-lg">
+                <p className="text-lg scroll-reveal">
                   Every suit we create carries with it the weight of tradition, the precision of technique, 
                   and the promise of a garment that will outlive fleeting trends.
                 </p>
@@ -59,9 +63,9 @@ export default function AboutPage() {
       <section className="py-32 px-4 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 animate-fadeInUp">
-            <p className="section-subtitle">What We Stand For</p>
-            <h2 className="section-title">Our Core Values</h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto mt-4">
+            <p className="section-subtitle scroll-reveal">What We Stand For</p>
+            <h2 className="section-title scroll-reveal">Our Core Values</h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto mt-4 scroll-reveal">
               These principles guide every decision we make and every stitch we place
             </p>
           </div>
@@ -88,8 +92,8 @@ export default function AboutPage() {
                 <div className="flex items-start">
                   <div className="text-5xl mb-4">{value.icon}</div>
                 </div>
-                <h3 className="font-serif text-2xl mb-4 text-gray-900">{value.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{value.description}</p>
+                <h3 className="font-serif text-2xl mb-4 text-gray-900 scroll-reveal">{value.title}</h3>
+                <p className="text-gray-600 leading-relaxed scroll-reveal">{value.description}</p>
                 <div className="absolute top-0 left-0 w-1 h-full" style={{ background: 'linear-gradient(180deg, #C8A16F 0%, #D9B080 100%)' }} />
               </div>
             ))}
@@ -99,11 +103,12 @@ export default function AboutPage() {
 
       {/* Team Section */}
       <section className="py-32 px-4">
+          <ScrollToTop />
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 animate-fadeInUp">
-            <p className="section-subtitle">Meet Our Team</p>
-            <h2 className="section-title">Master Artisans</h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto mt-4">
+            <p className="section-subtitle scroll-reveal">Meet Our Team</p>
+            <h2 className="section-title scroll-reveal">Master Artisans</h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto mt-4 scroll-reveal">
               Decades of combined experience in luxury bespoke tailoring
             </p>
           </div>
@@ -139,9 +144,9 @@ export default function AboutPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
-                <h3 className="font-serif text-2xl text-gray-900 mb-1">{member.name}</h3>
-                <p className="font-semibold mb-2 uppercase tracking-widest text-sm" style={{ color: '#C8A16F' }}>{member.role}</p>
-                <p className="text-gray-600">{member.bio}</p>
+                <h3 className="font-serif text-2xl text-gray-900 mb-1 scroll-reveal">{member.name}</h3>
+                <p className="font-semibold mb-2 uppercase tracking-widest text-sm scroll-reveal" style={{ color: '#C8A16F' }}>{member.role}</p>
+                <p className="text-gray-600 scroll-reveal">{member.bio}</p>
               </div>
             ))}
           </div>
@@ -162,8 +167,8 @@ export default function AboutPage() {
               { number: '100%', label: 'Handmade' },
             ].map((stat, idx) => (
               <div key={idx} className="animate-fadeInUp" style={{ animationDelay: `${idx * 0.1}s` }}>
-                <div className="text-5xl font-serif mb-2" style={{ color: '#C8A16F' }}>{stat.number}</div>
-                <p className="text-gray-300 uppercase tracking-widest text-xs">{stat.label}</p>
+                <div className="text-5xl font-serif mb-2 scroll-reveal" style={{ color: '#C8A16F' }}>{stat.number}</div>
+                <p className="text-gray-300 uppercase tracking-widest text-xs scroll-reveal">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -176,10 +181,10 @@ export default function AboutPage() {
           <div className="mb-6 inline-block">
             <div className="luxury-line mx-auto" />
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl mb-6 animate-fadeInUp">
+          <h2 className="font-serif text-4xl md:text-5xl mb-6 animate-fadeInUp scroll-reveal">
             Experience Our Craftsmanship
           </h2>
-          <p className="text-xl text-gray-600 mb-8 animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
+          <p className="text-xl text-gray-600 mb-8 animate-fadeInUp scroll-reveal" style={{ animationDelay: '0.1s' }}>
             Ready to start your bespoke tailoring journey?
           </p>
           <Link href="/contact" className="btn-primary inline-block animate-fadeInUp" style={{ animationDelay: '0.2s' }}>

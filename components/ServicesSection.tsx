@@ -15,7 +15,7 @@ const ServicesSection = () => (
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
           </div>
           <div className="absolute bottom-8 left-8 right-8 text-white">
-            <h3 className="text-3xl font-light tracking-wider mb-3">Suits</h3>
+            <h3 className="text-3xl font-light tracking-wider mb-3 scroll-reveal">Suits</h3>
             <button className="text-xs tracking-[0.2em] border-b border-white pb-1 hover:border-transparent transition">
               EXPLORE
             </button>
@@ -32,7 +32,7 @@ const ServicesSection = () => (
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
           </div>
           <div className="absolute bottom-8 left-8 right-8 text-white">
-            <h3 className="text-3xl font-light tracking-wider mb-3">Shirts</h3>
+            <h3 className="text-3xl font-light tracking-wider mb-3 scroll-reveal">Shirts</h3>
             <button className="text-xs tracking-[0.2em] border-b border-white pb-1 hover:border-transparent transition">
               EXPLORE
             </button>
@@ -49,7 +49,7 @@ const ServicesSection = () => (
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
           </div>
           <div className="absolute bottom-8 left-8 right-8 text-white">
-            <h3 className="text-3xl font-light tracking-wider mb-3">Overcoats</h3>
+            <h3 className="text-3xl font-light tracking-wider mb-3 scroll-reveal">Overcoats</h3>
             <button className="text-xs tracking-[0.2em] border-b border-white pb-1 hover:border-transparent transition">
               EXPLORE
             </button>

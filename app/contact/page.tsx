@@ -1,8 +1,12 @@
 'use client';
 
+
 import React, { useState } from 'react';
+import useScrollReveal from '../../utils/useScrollReveal';
+import ScrollToTop from '../../components/ScrollToTop';
 
 export default function ContactPage() {
+  useScrollReveal();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -38,10 +42,10 @@ export default function ContactPage() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white px-6">
-          <h1 className="text-6xl lg:text-8xl font-light tracking-[0.2em] text-center">
+          <h1 className="text-6xl lg:text-8xl font-light tracking-[0.2em] text-center scroll-reveal">
             CONTACT
           </h1>
-          <p className="text-xl lg:text-2xl font-light italic tracking-wide mt-4">
+          <p className="text-xl lg:text-2xl font-light italic tracking-wide mt-4 scroll-reveal">
             We Look Forward to Welcoming You
           </p>
         </div>
@@ -49,12 +53,13 @@ export default function ContactPage() {
 
       {/* Introduction */}
       <section className="container mx-auto px-6 lg:px-12 py-24">
+          <ScrollToTop />
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl lg:text-5xl font-light tracking-wide mb-8">
+          <h2 className="text-4xl lg:text-5xl font-light tracking-wide mb-8 scroll-reveal">
             Begin Your <em className="text-neutral-600">Journey</em>
           </h2>
           <div className="w-24 h-px bg-neutral-300 mx-auto my-8" />
-          <p className="text-lg leading-relaxed text-neutral-700">
+          <p className="text-lg leading-relaxed text-neutral-700 scroll-reveal">
             Whether you're interested in commissioning a bespoke suit, have questions about our 
             services, or simply wish to discuss your tailoring needs, we invite you to get in touch. 
             Our team is here to assist you.
@@ -68,7 +73,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-light tracking-wide mb-8">Book a Consultation</h2>
+              <h2 className="text-3xl font-light tracking-wide mb-8 scroll-reveal">Book a Consultation</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm tracking-wider mb-2">
@@ -180,11 +185,11 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-12">
               <div>
-                <h2 className="text-3xl font-light tracking-wide mb-8">Visit Our Store</h2>
+                <h2 className="text-3xl font-light tracking-wide mb-8 scroll-reveal">Visit Our Store</h2>
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-xs tracking-[0.2em] text-neutral-500 mb-2">LOCATION</h3>
-                    <p className="text-lg leading-relaxed">
+                    <h3 className="text-xs tracking-[0.2em] text-neutral-500 mb-2 scroll-reveal">LOCATION</h3>
+                    <p className="text-lg leading-relaxed scroll-reveal">
                       Finfit Bespoke Tailoring
                       <br />
                       Manama, Bahrain
@@ -192,13 +197,13 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-xs tracking-[0.2em] text-neutral-500 mb-2">OPENING HOURS</h3>
+                    <h3 className="text-xs tracking-[0.2em] text-neutral-500 mb-2 scroll-reveal">OPENING HOURS</h3>
                     <div className="text-base space-y-1">
-                      <p className="flex justify-between max-w-xs">
+                      <p className="flex justify-between max-w-xs scroll-reveal">
                         <span>Saturday - Thursday</span>
                         <span className="font-light">9:00 AM - 8:00 PM</span>
                       </p>
-                      <p className="flex justify-between max-w-xs">
+                      <p className="flex justify-between max-w-xs scroll-reveal">
                         <span>Friday</span>
                         <span className="font-light">2:00 PM - 8:00 PM</span>
                       </p>
@@ -206,15 +211,15 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <h3 className="text-xs tracking-[0.2em] text-neutral-500 mb-2">CONTACT</h3>
+                    <h3 className="text-xs tracking-[0.2em] text-neutral-500 mb-2 scroll-reveal">CONTACT</h3>
                     <div className="space-y-2 text-base">
                       <p>
-                        <a href="tel:+97317123456" className="hover:text-neutral-600 transition">
+                        <a href="tel:+97317123456" className="hover:text-neutral-600 transition scroll-reveal">
                           +973 1712 3456
                         </a>
                       </p>
                       <p>
-                        <a href="mailto:info@finfit.com" className="hover:text-neutral-600 transition">
+                        <a href="mailto:info@finfit.com" className="hover:text-neutral-600 transition scroll-reveal">
                           info@finfit.com
                         </a>
                       </p>
@@ -224,17 +229,17 @@ export default function ContactPage() {
               </div>
 
               <div className="border-t border-neutral-200 pt-12">
-                <h3 className="text-2xl font-light tracking-wide mb-6">What to Expect</h3>
+                <h3 className="text-2xl font-light tracking-wide mb-6 scroll-reveal">What to Expect</h3>
                 <div className="space-y-4 text-base leading-relaxed text-neutral-700">
-                  <p>
+                  <p className="scroll-reveal">
                     During your initial consultation, we'll discuss your requirements, lifestyle, 
                     and preferences. This typically takes 45-60 minutes.
                   </p>
-                  <p>
+                  <p className="scroll-reveal">
                     You'll have the opportunity to explore our extensive fabric collection and 
                     review style options with our master tailor.
                   </p>
-                  <p>
+                  <p className="scroll-reveal">
                     We'll take detailed measurements and discuss the timeline for your bespoke 
                     garment, which typically requires 8-10 weeks for completion.
                   </p>
@@ -242,8 +247,8 @@ export default function ContactPage() {
               </div>
 
               <div className="bg-neutral-800 text-white p-8">
-                <h3 className="text-xl tracking-wider mb-4 font-light">APPOINTMENTS RECOMMENDED</h3>
-                <p className="text-sm leading-relaxed text-neutral-300">
+                <h3 className="text-xl tracking-wider mb-4 font-light scroll-reveal">APPOINTMENTS RECOMMENDED</h3>
+                <p className="text-sm leading-relaxed text-neutral-300 scroll-reveal">
                   While walk-ins are welcome, we recommend booking an appointment to ensure our 
                   master tailor can give you his undivided attention.
                 </p>
@@ -288,10 +293,10 @@ export default function ContactPage() {
       {/* Final CTA */}
       <section className="bg-neutral-900 text-white py-24">
         <div className="container mx-auto px-6 lg:px-12 text-center">
-          <h2 className="text-5xl lg:text-6xl font-light tracking-wide mb-6">
+          <h2 className="text-5xl lg:text-6xl font-light tracking-wide mb-6 scroll-reveal">
             Ready to Begin?
           </h2>
-          <p className="text-lg text-neutral-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-neutral-300 mb-10 max-w-2xl mx-auto leading-relaxed scroll-reveal">
             Contact us today to schedule your consultation and experience the art of bespoke tailoring.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

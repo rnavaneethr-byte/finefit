@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "Finfit - Bespoke Tailoring",
@@ -17,10 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-white min-h-screen flex flex-col">
+      <body className="bg-white min-h-screen flex flex-col animate-royal-fade">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

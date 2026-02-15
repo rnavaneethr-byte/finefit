@@ -1,11 +1,14 @@
 'use client';
 
+
 import React from 'react';
+import useScrollReveal from '../../utils/useScrollReveal';
+import ScrollToTop from '../../components/ScrollToTop';
 
 export default function BespokePage() {
+  useScrollReveal();
   return (
     <div className="font-serif text-neutral-800 bg-white">
-
       {/* Hero Section */}
       <section className="relative h-[70vh] mt-32">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30" />
@@ -24,16 +27,16 @@ export default function BespokePage() {
       {/* Introduction */}
       <section className="container mx-auto px-6 lg:px-12 py-24">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl lg:text-5xl font-light tracking-wide mb-8">
+          <h2 className="text-4xl lg:text-5xl font-light tracking-wide mb-8 scroll-reveal">
             The Pinnacle of <em className="text-neutral-600">Personal Style</em>
           </h2>
           <div className="w-24 h-px bg-neutral-300 mx-auto my-8" />
-          <p className="text-lg leading-relaxed text-neutral-700 mb-6">
+          <p className="text-lg leading-relaxed text-neutral-700 mb-6 scroll-reveal">
             Bespoke tailoring represents the highest form of sartorial craftsmanship. Every garment 
             is created exclusively for you, cut and constructed by hand to your exact measurements 
             and specifications.
           </p>
-          <p className="text-lg leading-relaxed text-neutral-700">
+          <p className="text-lg leading-relaxed text-neutral-700 scroll-reveal">
             With 46 years of master tailoring expertise, we create garments that are not merely 
             clothes, but investments in your personal style and confidence.
           </p>
@@ -57,107 +60,93 @@ export default function BespokePage() {
       <section className="bg-white py-24 overflow-hidden">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
-            <p className="text-xs tracking-[0.3em] text-neutral-500 mb-4">OUR PROCESS</p>
+            <p className="text-xs tracking-[0.3em] text-neutral-500 mb-4 scroll-reveal">OUR PROCESS</p>
             <h2 className="text-5xl font-light tracking-wide mb-6">
-              The Art of <em>Creation</em>
+              The Art of <em className="text-neutral-600">Creation</em>
             </h2>
-            <p className="text-base text-neutral-600">
+            <p className="text-base text-neutral-600 scroll-reveal">
               Six refined steps from vision to masterpiece
             </p>
           </div>
-
           {/* Horizontal Scrolling Timeline */}
           <div className="relative">
             {/* Connecting Line */}
             <div className="absolute top-16 left-0 right-0 h-px bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
-            
-            {/* Scrollable Container */}
-            <div className="overflow-x-auto pb-8 scrollbar-hide">
-              <div className="flex items-start justify-start lg:justify-center min-w-max lg:min-w-0 space-x-8 lg:space-x-16 px-4">
-                
-                {/* Step 1 */}
-                <div className="flex flex-col items-center group cursor-pointer transition-all duration-500 hover:scale-105 w-56">
-                  <div className="w-32 h-32 bg-white border border-neutral-300 rounded-full flex flex-col items-center justify-center mb-6 relative z-10 transition-all duration-500 group-hover:border-neutral-800 group-hover:shadow-xl">
-                    <span className="text-5xl font-light text-neutral-800 transition-all duration-500 group-hover:scale-110">01</span>
-                  </div>
-                  <div className="w-12 h-px bg-neutral-800 mb-4 transition-all duration-500 group-hover:w-16" />
-                  <h3 className="text-lg tracking-widest mb-3 font-light transition-all duration-500 group-hover:text-neutral-600">CONSULTATION</h3>
-                  <p className="text-sm leading-relaxed text-neutral-500 text-center transition-all duration-500 group-hover:text-neutral-700">
-                    Understanding your style, lifestyle, and vision
-                  </p>
+            <div className="flex flex-row gap-8 overflow-x-auto scrollbar-hide py-8">
+              {/* Step 1 */}
+              <div className="flex flex-col items-center group cursor-pointer transition-all duration-500 hover:scale-105 w-56">
+                <div className="w-32 h-32 bg-white border border-neutral-300 rounded-full flex flex-col items-center justify-center mb-6 relative z-10 transition-all duration-500 group-hover:border-neutral-800 group-hover:shadow-xl">
+                  <span className="text-5xl font-light text-neutral-800 transition-all duration-500 group-hover:scale-110">01</span>
                 </div>
-
-                {/* Step 2 */}
-                <div className="flex flex-col items-center group cursor-pointer transition-all duration-500 hover:scale-105 w-56">
-                  <div className="w-32 h-32 bg-white border border-neutral-300 rounded-full flex flex-col items-center justify-center mb-6 relative z-10 transition-all duration-500 group-hover:border-neutral-800 group-hover:shadow-xl">
-                    <span className="text-5xl font-light text-neutral-800 transition-all duration-500 group-hover:scale-110">02</span>
-                  </div>
-                  <div className="w-12 h-px bg-neutral-800 mb-4 transition-all duration-500 group-hover:w-16" />
-                  <h3 className="text-lg tracking-widest mb-3 font-light transition-all duration-500 group-hover:text-neutral-600">MEASUREMENT</h3>
-                  <p className="text-sm leading-relaxed text-neutral-500 text-center transition-all duration-500 group-hover:text-neutral-700">
-                    30+ precise measurements for perfect fit
-                  </p>
+                <div className="w-12 h-px bg-neutral-800 mb-4 transition-all duration-500 group-hover:w-16" />
+                <h3 className="text-lg tracking-widest mb-3 font-light transition-all duration-500 group-hover:text-neutral-600">CONSULTATION</h3>
+                <p className="text-sm leading-relaxed text-neutral-500 text-center transition-all duration-500 group-hover:text-neutral-700">
+                  Understanding your style, lifestyle, and vision
+                </p>
+              </div>
+              {/* Step 2 */}
+              <div className="flex flex-col items-center group cursor-pointer transition-all duration-500 hover:scale-105 w-56">
+                <div className="w-32 h-32 bg-white border border-neutral-300 rounded-full flex flex-col items-center justify-center mb-6 relative z-10 transition-all duration-500 group-hover:border-neutral-800 group-hover:shadow-xl">
+                  <span className="text-5xl font-light text-neutral-800 transition-all duration-500 group-hover:scale-110">02</span>
                 </div>
-
-                {/* Step 3 */}
-                <div className="flex flex-col items-center group cursor-pointer transition-all duration-500 hover:scale-105 w-56">
-                  <div className="w-32 h-32 bg-white border border-neutral-300 rounded-full flex flex-col items-center justify-center mb-6 relative z-10 transition-all duration-500 group-hover:border-neutral-800 group-hover:shadow-xl">
-                    <span className="text-5xl font-light text-neutral-800 transition-all duration-500 group-hover:scale-110">03</span>
-                  </div>
-                  <div className="w-12 h-px bg-neutral-800 mb-4 transition-all duration-500 group-hover:w-16" />
-                  <h3 className="text-lg tracking-widest mb-3 font-light transition-all duration-500 group-hover:text-neutral-600">FABRIC</h3>
-                  <p className="text-sm leading-relaxed text-neutral-500 text-center transition-all duration-500 group-hover:text-neutral-700">
-                    Curated collection of world's finest materials
-                  </p>
+                <div className="w-12 h-px bg-neutral-800 mb-4 transition-all duration-500 group-hover:w-16" />
+                <h3 className="text-lg tracking-widest mb-3 font-light transition-all duration-500 group-hover:text-neutral-600">MEASUREMENT</h3>
+                <p className="text-sm leading-relaxed text-neutral-500 text-center transition-all duration-500 group-hover:text-neutral-700">
+                  30+ precise measurements for perfect fit
+                </p>
+              </div>
+              {/* Step 3 */}
+              <div className="flex flex-col items-center group cursor-pointer transition-all duration-500 hover:scale-105 w-56">
+                <div className="w-32 h-32 bg-white border border-neutral-300 rounded-full flex flex-col items-center justify-center mb-6 relative z-10 transition-all duration-500 group-hover:border-neutral-800 group-hover:shadow-xl">
+                  <span className="text-5xl font-light text-neutral-800 transition-all duration-500 group-hover:scale-110">03</span>
                 </div>
-
-                {/* Step 4 */}
-                <div className="flex flex-col items-center group cursor-pointer transition-all duration-500 hover:scale-105 w-56">
-                  <div className="w-32 h-32 bg-white border border-neutral-300 rounded-full flex flex-col items-center justify-center mb-6 relative z-10 transition-all duration-500 group-hover:border-neutral-800 group-hover:shadow-xl">
-                    <span className="text-5xl font-light text-neutral-800 transition-all duration-500 group-hover:scale-110">04</span>
-                  </div>
-                  <div className="w-12 h-px bg-neutral-800 mb-4 transition-all duration-500 group-hover:w-16" />
-                  <h3 className="text-lg tracking-widest mb-3 font-light transition-all duration-500 group-hover:text-neutral-600">CUTTING</h3>
-                  <p className="text-sm leading-relaxed text-neutral-500 text-center transition-all duration-500 group-hover:text-neutral-700">
-                    Hand-drafted pattern unique to you
-                  </p>
+                <div className="w-12 h-px bg-neutral-800 mb-4 transition-all duration-500 group-hover:w-16" />
+                <h3 className="text-lg tracking-widest mb-3 font-light transition-all duration-500 group-hover:text-neutral-600">FABRIC</h3>
+                <p className="text-sm leading-relaxed text-neutral-500 text-center transition-all duration-500 group-hover:text-neutral-700">
+                  Curated collection of world's finest materials
+                </p>
+              </div>
+              {/* Step 4 */}
+              <div className="flex flex-col items-center group cursor-pointer transition-all duration-500 hover:scale-105 w-56">
+                <div className="w-32 h-32 bg-white border border-neutral-300 rounded-full flex flex-col items-center justify-center mb-6 relative z-10 transition-all duration-500 group-hover:border-neutral-800 group-hover:shadow-xl">
+                  <span className="text-5xl font-light text-neutral-800 transition-all duration-500 group-hover:scale-110">04</span>
                 </div>
-
-                {/* Step 5 */}
-                <div className="flex flex-col items-center group cursor-pointer transition-all duration-500 hover:scale-105 w-56">
-                  <div className="w-32 h-32 bg-white border border-neutral-300 rounded-full flex flex-col items-center justify-center mb-6 relative z-10 transition-all duration-500 group-hover:border-neutral-800 group-hover:shadow-xl">
-                    <span className="text-5xl font-light text-neutral-800 transition-all duration-500 group-hover:scale-110">05</span>
-                  </div>
-                  <div className="w-12 h-px bg-neutral-800 mb-4 transition-all duration-500 group-hover:w-16" />
-                  <h3 className="text-lg tracking-widest mb-3 font-light transition-all duration-500 group-hover:text-neutral-600">FITTING</h3>
-                  <p className="text-sm leading-relaxed text-neutral-500 text-center transition-all duration-500 group-hover:text-neutral-700">
-                    Refinement through basted fittings
-                  </p>
+                <div className="w-12 h-px bg-neutral-800 mb-4 transition-all duration-500 group-hover:w-16" />
+                <h3 className="text-lg tracking-widest mb-3 font-light transition-all duration-500 group-hover:text-neutral-600">CUTTING</h3>
+                <p className="text-sm leading-relaxed text-neutral-500 text-center transition-all duration-500 group-hover:text-neutral-700">
+                  Hand-drafted pattern unique to you
+                </p>
+              </div>
+              {/* Step 5 */}
+              <div className="flex flex-col items-center group cursor-pointer transition-all duration-500 hover:scale-105 w-56">
+                <div className="w-32 h-32 bg-white border border-neutral-300 rounded-full flex flex-col items-center justify-center mb-6 relative z-10 transition-all duration-500 group-hover:border-neutral-800 group-hover:shadow-xl">
+                  <span className="text-5xl font-light text-neutral-800 transition-all duration-500 group-hover:scale-110">05</span>
                 </div>
-
-                {/* Step 6 */}
-                <div className="flex flex-col items-center group cursor-pointer transition-all duration-500 hover:scale-105 w-56">
-                  <div className="w-32 h-32 bg-white border border-neutral-300 rounded-full flex flex-col items-center justify-center mb-6 relative z-10 transition-all duration-500 group-hover:border-neutral-800 group-hover:shadow-xl">
-                    <span className="text-5xl font-light text-neutral-800 transition-all duration-500 group-hover:scale-110">06</span>
-                  </div>
-                  <div className="w-12 h-px bg-neutral-800 mb-4 transition-all duration-500 group-hover:w-16" />
-                  <h3 className="text-lg tracking-widest mb-3 font-light transition-all duration-500 group-hover:text-neutral-600">PERFECTION</h3>
-                  <p className="text-sm leading-relaxed text-neutral-500 text-center transition-all duration-500 group-hover:text-neutral-700">
-                    Hand-finished masterpiece delivered
-                  </p>
+                <div className="w-12 h-px bg-neutral-800 mb-4 transition-all duration-500 group-hover:w-16" />
+                <h3 className="text-lg tracking-widest mb-3 font-light transition-all duration-500 group-hover:text-neutral-600">FITTING</h3>
+                <p className="text-sm leading-relaxed text-neutral-500 text-center transition-all duration-500 group-hover:text-neutral-700">
+                  Refinement through basted fittings
+                </p>
+              </div>
+              {/* Step 6 */}
+              <div className="flex flex-col items-center group cursor-pointer transition-all duration-500 hover:scale-105 w-56">
+                <div className="w-32 h-32 bg-white border border-neutral-300 rounded-full flex flex-col items-center justify-center mb-6 relative z-10 transition-all duration-500 group-hover:border-neutral-800 group-hover:shadow-xl">
+                  <span className="text-5xl font-light text-neutral-800 transition-all duration-500 group-hover:scale-110">06</span>
                 </div>
-
+                <div className="w-12 h-px bg-neutral-800 mb-4 transition-all duration-500 group-hover:w-16" />
+                <h3 className="text-lg tracking-widest mb-3 font-light transition-all duration-500 group-hover:text-neutral-600">PERFECTION</h3>
+                <p className="text-sm leading-relaxed text-neutral-500 text-center transition-all duration-500 group-hover:text-neutral-700">
+                  Hand-finished masterpiece delivered
+                </p>
               </div>
             </div>
-
-            {/* Scroll Indicators - Mobile Only */}
-            <div className="lg:hidden flex justify-center mt-8 space-x-2">
-              <div className="w-2 h-2 rounded-full bg-neutral-800"></div>
-              <div className="w-2 h-2 rounded-full bg-neutral-300"></div>
-              <div className="w-2 h-2 rounded-full bg-neutral-300"></div>
-            </div>
           </div>
-
+          {/* Scroll Indicators - Mobile Only */}
+          <div className="lg:hidden flex justify-center mt-8 space-x-2">
+            <div className="w-2 h-2 rounded-full bg-neutral-800"></div>
+            <div className="w-2 h-2 rounded-full bg-neutral-300"></div>
+            <div className="w-2 h-2 rounded-full bg-neutral-300"></div>
+          </div>
           {/* Timeline Info */}
           <div className="mt-16 text-center">
             <div className="inline-block border-t border-neutral-200 pt-6">
@@ -170,7 +159,6 @@ export default function BespokePage() {
             </div>
           </div>
         </div>
-
         <style jsx>{`
           .scrollbar-hide::-webkit-scrollbar {
             display: none;
@@ -181,6 +169,7 @@ export default function BespokePage() {
           }
         `}</style>
       </section>
+      {/* Duplicate timeline and steps removed. JSX structure is now correct. */}
 
       {/* Two Column - What We Offer */}
       <section className="container mx-auto px-6 lg:px-12 py-24">
@@ -344,6 +333,7 @@ export default function BespokePage() {
           </div>
         </div>
       </section>
+      <ScrollToTop />
     </div>
   );
 }
