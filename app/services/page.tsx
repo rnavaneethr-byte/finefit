@@ -1,14 +1,9 @@
 'use client';
 
-
 import Image from 'next/image'
 import Link from 'next/link'
-import useScrollReveal from '../../utils/useScrollReveal';
-import ScrollToTop from '../../components/ScrollToTop';
 
 export default function ServicesPage() {
-  // useScrollReveal();
-  // Parallax scroll handled globally
   const services = [
     {
       title: 'Bespoke Suits',
@@ -98,21 +93,19 @@ export default function ServicesPage() {
           src="/images/service.png"
           alt="Our Services"
           fill
-          className="object-cover parallax-scroll"
-          data-parallax-speed="0.3"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <p className="text-xs tracking-[0.3em] mb-4 text-neutral-300 scroll-reveal">WHAT WE OFFER</p>
-            <h1 className="font-serif text-5xl md:text-6xl font-light tracking-wide scroll-reveal">Our Services</h1>
+            <p className="text-xs tracking-[0.3em] mb-4 text-neutral-300">WHAT WE OFFER</p>
+            <h1 className="font-serif text-5xl md:text-6xl font-light tracking-wide">Our Services</h1>
           </div>
         </div>
       </section>
 
       {/* Services List */}
       <section className="py-32 px-4 max-w-7xl mx-auto">
-          <ScrollToTop />
         <div className="space-y-32">
           {services.map((service, idx) => (
             <div
@@ -136,11 +129,11 @@ export default function ServicesPage() {
                 <div className="mb-6">
                   <span className="text-xs tracking-[0.3em] text-neutral-500">SERVICE {String(idx + 1).padStart(2, '0')}</span>
                 </div>
-                <h2 className="font-serif text-4xl md:text-5xl font-light tracking-wide mb-6 text-neutral-900 scroll-reveal">
+                <h2 className="font-serif text-4xl md:text-5xl font-light tracking-wide mb-6 text-neutral-900">
                   {service.title}
                 </h2>
                 <div className="w-16 h-px bg-neutral-300 mb-6" />
-                <p className="text-neutral-600 mb-8 leading-relaxed text-base scroll-reveal">
+                <p className="text-neutral-600 mb-8 leading-relaxed text-base">
                   {service.description}
                 </p>
                 
@@ -149,7 +142,7 @@ export default function ServicesPage() {
                   {service.features.map((feature, featureIdx) => (
                     <div key={featureIdx} className="flex items-start text-neutral-700">
                       <div className="w-1 h-1 bg-neutral-800 rounded-full mt-2 mr-4 flex-shrink-0" />
-                      <span className="text-sm leading-relaxed scroll-reveal">{feature}</span>
+                      <span className="text-sm leading-relaxed">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -157,8 +150,8 @@ export default function ServicesPage() {
                 {/* Timeline */}
                 <div className="flex items-center mb-8 pb-6 border-b border-neutral-200">
                   <div>
-                    <p className="text-xs text-neutral-500 uppercase tracking-wider mb-1 scroll-reveal">Timeline</p>
-                    <p className="text-lg font-light text-neutral-900 scroll-reveal">{service.duration}</p>
+                    <p className="text-xs text-neutral-500 uppercase tracking-wider mb-1">Timeline</p>
+                    <p className="text-lg font-light text-neutral-900">{service.duration}</p>
                   </div>
                 </div>
                 
@@ -177,11 +170,11 @@ export default function ServicesPage() {
       {/* CTA */}
       <section className="py-32 px-4 text-center bg-neutral-900 text-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-4xl md:text-6xl font-light tracking-wide mb-6 scroll-reveal">
+          <h2 className="font-serif text-4xl md:text-6xl font-light tracking-wide mb-6">
             Ready to Get Started?
           </h2>
           <div className="w-24 h-px bg-white mx-auto my-8 opacity-50" />
-          <p className="text-lg mb-10 text-neutral-300 leading-relaxed max-w-2xl mx-auto scroll-reveal">
+          <p className="text-lg mb-10 text-neutral-300 leading-relaxed max-w-2xl mx-auto">
             Schedule a consultation with our master tailors and experience the art of bespoke tailoring
           </p>
           <Link 

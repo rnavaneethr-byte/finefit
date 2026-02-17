@@ -14,7 +14,7 @@ export default function BespokePage() {
       <section className="relative h-[70vh] mt-32">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30" />
         <img
-          src="/images/be.png"
+          src="/images/be.webp"
           alt="Bespoke Tailoring"
           className="w-full h-full object-cover parallax-scroll"
           data-parallax-speed="0.3"
@@ -169,7 +169,7 @@ export default function BespokePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative h-[600px]">
             <img
-              src="/images/suits.jpeg"
+              src="/images/suits.webp"
               alt="Bespoke Suits"
               className="w-full h-full object-cover"
             />

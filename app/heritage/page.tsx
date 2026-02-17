@@ -14,7 +14,7 @@ export default function HeritagePage() {
       {/* Hero */}
       <section className="relative h-[60vh]">
         <img
-          src="/images/heritage.png"
+          src="/images/heritage.webp"
           alt="Heritage"
           className="w-full h-full object-cover parallax-scroll"
           data-parallax-speed="0.3"

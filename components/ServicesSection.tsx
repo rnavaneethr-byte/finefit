@@ -8,7 +8,7 @@ const ServicesSection = () => (
         <div className="relative group cursor-pointer overflow-hidden">
           <div className="relative h-[500px]">
             <img
-              src="/images/suit.png"
+              src="/images/suit.webp"
               alt="Suits"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -23,7 +23,7 @@ const ServicesSection = () => (
         <div className="relative group cursor-pointer overflow-hidden">
           <div className="relative h-[500px]">
             <img
-              src="/images/about3.png"
+              src="/images/about3.webp"
               alt="Shirts"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -38,7 +38,7 @@ const ServicesSection = () => (
         <div className="relative group cursor-pointer overflow-hidden">
           <div className="relative h-[500px]">
             <img
-              src="/images/overcoat.jpg"
+              src="/images/overcoat.webp"
               alt="Overcoats"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />

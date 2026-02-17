@@ -44,7 +44,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="relative h-[50vh]">
         <img
-          src="/images/contact.png"
+          src="/images/contact.webp"
           alt="Contact Us"
           className="w-full h-full object-cover parallax-scroll"
           data-parallax-speed="0.3"

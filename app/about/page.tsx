@@ -11,7 +11,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative h-[60vh] overflow-hidden">
         <Image
-          src="/images/about1.png"
+          src="/images/about1.webp"
           alt="About FineFit"
           fill
           className="object-cover parallax-scroll"

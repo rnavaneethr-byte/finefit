@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section
       className="relative w-full h-screen bg-cover bg-[center_20%] flex items-center justify-center"
-      style={{ backgroundImage: "url('/images/hero.png')" }}
+      style={{ backgroundImage: "url('/images/hero.webp')" }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>

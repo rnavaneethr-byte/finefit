@@ -3,7 +3,7 @@ import React from 'react';
 const FullWidthImageSection = () => (
   <section className="relative h-[600px]">
     <img
-      src="images/about1.png"
+      src="images/about1.webp"
       alt="Bespoke Process"
       className="w-full h-full object-cover"
     />
