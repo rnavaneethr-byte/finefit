@@ -33,12 +33,15 @@ export default function Footer() {
             <input type="email" placeholder="Email Address" className="w-full bg-transparent border-b border-neutral-600 py-2 text-sm focus:outline-none focus:border-white transition" />
           </div>
         </div>
-        <div className="border-t border-neutral-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-500">
-          <p>© 2024 FINFIT. All rights reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white transition">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition">Terms & Conditions</a>
+        <div className="border-t border-neutral-800 pt-8 flex flex-col items-center text-xs text-neutral-500">
+          <div className="flex flex-col md:flex-row w-full justify-between items-center mb-2">
+            <p>© 2024 FINFIT. All rights reserved.</p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" className="hover:text-white transition">Privacy Policy</a>
+              <a href="#" className="hover:text-white transition">Terms & Conditions</a>
+            </div>
           </div>
+          <span className="text-[11px] text-neutral-600 text-center">built by <a href="https://maithri-portfolio-amber.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">maithri</a></span>
         </div>
       </div>
     </footer>
