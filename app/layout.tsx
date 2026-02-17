@@ -18,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body className="bg-white min-h-screen flex flex-col animate-royal-fade">
         <Header />
         <main className="flex-1">{children}</main>

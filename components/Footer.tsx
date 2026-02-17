@@ -23,8 +23,8 @@ export default function Footer() {
             <h4 className="text-xs tracking-[0.2em] mb-4 text-neutral-400">CONTACT</h4>
             <ul className="space-y-3 text-sm">
               <li className="text-neutral-400">Bahrain</li>
-              <li><a href="tel:+97317123456" className="hover:text-neutral-400 transition">+973 1712 3456</a></li>
-              <li><a href="mailto:info@finfit.com" className="hover:text-neutral-400 transition">info@finfit.com</a></li>
+              <li><a href="tel:+00973-17254668" className="hover:text-neutral-400 transition">+00973-17254668</a></li>
+              <li><a href="mailto:finefitbh@gmail.com" className="hover:text-neutral-400 transition">finefitbh@gmail.com</a></li>
             </ul>
           </div>
           <div>

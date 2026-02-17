@@ -331,6 +331,28 @@ export default function BespokePage() {
               CONTACT US
             </button>
           </div>
+          {/* Contact Information */}
+          <div className="mt-16 flex flex-col items-center gap-4 text-neutral-700">
+            <div className="text-lg">
+              <span className="font-semibold">Phone:</span> <a href="tel:0097317254668" className="underline hover:text-neutral-900">00973 17254668</a>
+            </div>
+            <div className="text-lg">
+              <span className="font-semibold">Email:</span> <a href="mailto:finefitbh@gmail.com" className="underline hover:text-neutral-900">finefitbh@gmail.com</a>
+            </div>
+          </div>
+          {/* Google Map Embed */}
+          <div className="mt-10 flex justify-center">
+            <iframe
+              title="FineFit Location"
+              src="https://www.google.com/maps?q=26.2206,50.5822&z=15&output=embed"
+              width="100%"
+              height="350"
+              className="rounded-lg border-0 shadow-lg max-w-2xl w-full"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
       <ScrollToTop />
