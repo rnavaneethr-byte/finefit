@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @keyframes royalReveal {
   0% {
     opacity: 0;
@@ -21,34 +24,27 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  body {
-    @apply font-serif antialiased;
-    font-family: 'Cormorant Garamond', serif;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-light;
-  }
-  
-  button {
-    @apply font-sans;
-    font-family: 'Inter', sans-serif;
-  }
+body {
+  font-family: 'Cormorant Garamond', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f5f0;
 }
 
-@layer utilities {
-  .font-sans {
-    font-family: 'Inter', sans-serif;
-  }
-  
-  .font-serif {
-    font-family: 'Cormorant Garamond', serif;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', serif;
 }
 
 /* Custom scrollbar */

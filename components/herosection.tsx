@@ -21,13 +21,13 @@ const HeroSection = () => {
           FineFit
         </h1>
 
+
         <h2 className="text-2xl md:text-4xl font-serif mb-6 scroll-reveal" style={{ animationDelay: '0.3s' }}>
-          Winter Tailoring
+          Bespoke Luxury Tailoring
         </h2>
 
         <p className="max-w-xl mx-auto mb-8 text-white/90 scroll-reveal" style={{ animationDelay: '0.4s' }}>
-          From staple overcoats to expertly tailored suiting,
-          discover winter tailoring made for the season’s demands.
+          Experience the art of custom craftsmanship, where tradition meets modern elegance. Perfect fit, timeless style—tailored just for you.
         </p>
 
         <a href="/contact" className="border border-white px-8 py-3 rounded-full hover:bg-white hover:text-black transition inline-block scroll-reveal" style={{ animationDelay: '0.5s' }}>

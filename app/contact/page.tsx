@@ -5,7 +5,8 @@ import useScrollReveal from '../../utils/useScrollReveal';
 import ScrollToTop from '../../components/ScrollToTop';
 
 export default function ContactPage() {
-  useScrollReveal();
+  // useScrollReveal();
+  // Parallax scroll handled globally
 
   const [formData, setFormData] = useState({
     name: '',
@@ -45,7 +46,8 @@ export default function ContactPage() {
         <img
           src="/images/contact.png"
           alt="Contact Us"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover parallax-scroll"
+          data-parallax-speed="0.3"
         />
         <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white px-6">
           <h1 className="text-6xl lg:text-8xl font-light tracking-[0.2em] text-center scroll-reveal">
@@ -171,7 +173,7 @@ export default function ContactPage() {
           Contact us today to schedule your consultation.
         </p>
 
-        <a href="tel:+97317254668"
+        <a href="tel:+0097317254668"
           className="bg-white text-neutral-800 px-12 py-4 tracking-[0.2em]">
           CALL NOW
         </a>

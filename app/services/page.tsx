@@ -7,7 +7,8 @@ import useScrollReveal from '../../utils/useScrollReveal';
 import ScrollToTop from '../../components/ScrollToTop';
 
 export default function ServicesPage() {
-  useScrollReveal();
+  // useScrollReveal();
+  // Parallax scroll handled globally
   const services = [
     {
       title: 'Bespoke Suits',
@@ -97,7 +98,8 @@ export default function ServicesPage() {
           src="/images/service.png"
           alt="Our Services"
           fill
-          className="object-cover"
+          className="object-cover parallax-scroll"
+          data-parallax-speed="0.3"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60" />
         <div className="absolute inset-0 flex items-center justify-center">

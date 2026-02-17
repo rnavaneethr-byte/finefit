@@ -6,7 +6,8 @@ import useScrollReveal from '../../utils/useScrollReveal';
 import ScrollToTop from '../../components/ScrollToTop';
 
 export default function HeritagePage() {
-  useScrollReveal();
+  // useScrollReveal();
+  // Parallax scroll handled globally
   return (
     <div className="font-serif text-neutral-800 bg-white">
 
@@ -15,7 +16,8 @@ export default function HeritagePage() {
         <img
           src="/images/heritage.png"
           alt="Heritage"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover parallax-scroll"
+          data-parallax-speed="0.3"
         />
         <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-6">
           <p className="text-xs tracking-[0.3em] mb-4 scroll-reveal">SINCE 1970</p>
@@ -172,52 +174,7 @@ export default function HeritagePage() {
         </div>
       </section>
 
-      {/* The Master Tailor - Enhanced */}
-      <section className="container mx-auto px-6 lg:px-12 py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="relative h-[650px] group">
-            <img
-              src="https://images.unsplash.com/photo-1556274986-9a69e75e5e0e?q=80&w=2000"
-              alt="Master Tailor"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 border border-neutral-300 pointer-events-none" />
-          </div>
-          <div className="space-y-6">
-            <p className="text-xs tracking-[0.3em] text-neutral-500 scroll-reveal">OUR FOUNDER</p>
-            <h2 className="text-5xl font-light tracking-wide leading-tight scroll-reveal">
-              The Master
-              <br />
-              <em className="text-neutral-600">Tailor</em>
-            </h2>
-            <div className="w-24 h-px bg-neutral-300 my-8" />
-            
-            <div className="space-y-6">
-              <div className="border-l-2 border-neutral-300 pl-6">
-                <p className="text-base leading-relaxed text-neutral-700 scroll-reveal">
-                  Our Director and Master Tailor brings 46 years of expertise to every garment created 
-                  at Finfit. Having started his journey in 1970, he has dedicated his life to perfecting 
-                  the art of bespoke tailoring.
-                </p>
-              </div>
 
-              <div className="border-l-2 border-neutral-300 pl-6">
-                <p className="text-base leading-relaxed text-neutral-700 scroll-reveal">
-                  His knowledge encompasses not only the technical aspects of cutting and construction, 
-                  but also the subtle art of understanding each client's unique needs and preferences.
-                </p>
-              </div>
-
-              <div className="border-l-2 border-neutral-800 pl-6">
-                <p className="text-base leading-relaxed text-neutral-700 font-medium scroll-reveal">
-                  Today, as business principal, designer, and cutter, he continues to personally oversee 
-                  every aspect of our work, ensuring uncompromising standards.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Philosophy Section - Redesigned as Cards */}
       <section className="bg-white py-24">

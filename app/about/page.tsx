@@ -4,16 +4,18 @@ import Link from 'next/link'
 import useScrollReveal from '../../utils/useScrollReveal';
 import ScrollToTop from '../../components/ScrollToTop';
 export default function AboutPage() {
-  useScrollReveal();
+  // useScrollReveal();
+  // Parallax scroll handled globally
   return (
     <>
       {/* Hero */}
       <section className="relative h-[60vh] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070"
+          src="/images/about1.png"
           alt="About FineFit"
           fill
-          className="object-cover"
+          className="object-cover parallax-scroll"
+          data-parallax-speed="0.3"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60" />
         <div className="absolute inset-0 flex items-center justify-center">

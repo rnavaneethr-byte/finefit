@@ -6,7 +6,8 @@ import useScrollReveal from '../../utils/useScrollReveal';
 import ScrollToTop from '../../components/ScrollToTop';
 
 export default function BespokePage() {
-  useScrollReveal();
+  // useScrollReveal();
+  // Parallax scroll handled globally
   return (
     <div className="font-serif text-neutral-800 bg-white">
       {/* Hero Section */}
@@ -15,7 +16,8 @@ export default function BespokePage() {
         <img
           src="/images/be.png"
           alt="Bespoke Tailoring"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover parallax-scroll"
+          data-parallax-speed="0.3"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-6">
           <p className="text-xs tracking-[0.3em] mb-4">SINCE 2008</p>
@@ -25,7 +27,7 @@ export default function BespokePage() {
       </section>
 
       {/* Introduction */}
-      <section className="container mx-auto px-6 lg:px-12 py-24">
+      <section className="container mx-auto px-6 lg:px-12 py-16">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl lg:text-5xl font-light tracking-wide mb-8 scroll-reveal">
             The Pinnacle of <em className="text-neutral-600">Personal Style</em>
@@ -45,7 +47,7 @@ export default function BespokePage() {
 
       {/* Elegant Divider */}
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-center gap-8 py-12">
+        <div className="flex items-center justify-center gap-8 py-6">
           <div className="h-px bg-gradient-to-r from-transparent to-neutral-300 w-full max-w-xs" />
           <div className="flex-shrink-0">
             <svg className="w-8 h-8 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,7 +59,7 @@ export default function BespokePage() {
       </div>
 
       {/* The Process - Horizontal Scroll with Animation */}
-      <section className="bg-white py-24 overflow-hidden">
+      <section id="our-process" className="bg-white py-16 overflow-hidden">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="text-center mb-16">
             <p className="text-xs tracking-[0.3em] text-neutral-500 mb-4 scroll-reveal">OUR PROCESS</p>
@@ -148,16 +150,7 @@ export default function BespokePage() {
             <div className="w-2 h-2 rounded-full bg-neutral-300"></div>
           </div>
           {/* Timeline Info */}
-          <div className="mt-16 text-center">
-            <div className="inline-block border-t border-neutral-200 pt-6">
-              <p className="text-sm tracking-wider text-neutral-500 mb-2">TIMELINE</p>
-              <p className="text-2xl font-light">
-                <span className="text-neutral-800">8-10 Weeks</span>
-                <span className="text-neutral-400 mx-3">•</span>
-                <span className="text-neutral-600 italic">From First Meeting to Final Fitting</span>
-              </p>
-            </div>
-          </div>
+       
         </div>
         <style jsx>{`
           .scrollbar-hide::-webkit-scrollbar {
@@ -172,7 +165,7 @@ export default function BespokePage() {
       {/* Duplicate timeline and steps removed. JSX structure is now correct. */}
 
       {/* Two Column - What We Offer */}
-      <section className="container mx-auto px-6 lg:px-12 py-24">
+      <section className="container mx-auto px-6 lg:px-12 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative h-[600px]">
             <img
@@ -235,7 +228,7 @@ export default function BespokePage() {
       </section>
 
       {/* Full Width Quote */}
-      <section className="bg-neutral-900 text-white py-24">
+      <section className="bg-neutral-900 text-white py-16">
         <div className="container mx-auto px-6 lg:px-12 text-center">
           <div className="max-w-4xl mx-auto">
             <p className="text-2xl lg:text-4xl font-light leading-relaxed italic">
@@ -246,75 +239,10 @@ export default function BespokePage() {
         </div>
       </section>
 
-      {/* Pricing & Timeline */}
-      <section className="container mx-auto px-6 lg:px-12 py-24">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-light tracking-wide mb-8">
-              Investment & <em>Timeline</em>
-            </h2>
-            <p className="text-lg text-neutral-600 leading-relaxed">
-              Bespoke tailoring is an investment in quality that will serve you for decades.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="border border-neutral-200 p-8">
-              <h3 className="text-2xl tracking-wider mb-6 font-light text-center">TIMELINE</h3>
-              <div className="space-y-4 text-neutral-700">
-                <div className="flex justify-between border-b border-neutral-100 pb-3">
-                  <span>Initial Consultation</span>
-                  <span className="font-light">Day 1</span>
-                </div>
-                <div className="flex justify-between border-b border-neutral-100 pb-3">
-                  <span>First Fitting</span>
-                  <span className="font-light">3-4 Weeks</span>
-                </div>
-                <div className="flex justify-between border-b border-neutral-100 pb-3">
-                  <span>Final Fitting</span>
-                  <span className="font-light">6-8 Weeks</span>
-                </div>
-                <div className="flex justify-between pt-3">
-                  <span className="font-medium">Completion</span>
-                  <span className="font-medium">8-10 Weeks</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="border border-neutral-200 p-8">
-              <h3 className="text-2xl tracking-wider mb-6 font-light text-center">INVESTMENT</h3>
-              <div className="space-y-4 text-neutral-700">
-                <div className="flex justify-between border-b border-neutral-100 pb-3">
-                  <span>Two-Piece Suit</span>
-                  <span className="font-light">From BD 450</span>
-                </div>
-                <div className="flex justify-between border-b border-neutral-100 pb-3">
-                  <span>Three-Piece Suit</span>
-                  <span className="font-light">From BD 550</span>
-                </div>
-                <div className="flex justify-between border-b border-neutral-100 pb-3">
-                  <span>Sports Jacket</span>
-                  <span className="font-light">From BD 300</span>
-                </div>
-                <div className="flex justify-between border-b border-neutral-100 pb-3">
-                  <span>Overcoat</span>
-                  <span className="font-light">From BD 400</span>
-                </div>
-                <div className="flex justify-between pt-3">
-                  <span>Bespoke Shirt</span>
-                  <span className="font-light">From BD 80</span>
-                </div>
-              </div>
-              <p className="text-xs text-neutral-500 mt-6 text-center">
-                *Prices vary based on fabric selection
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* CTA Section */}
-      <section className="bg-neutral-100 py-24">
+      <section className="bg-neutral-100 py-16">
         <div className="container mx-auto px-6 lg:px-12 text-center">
           <h2 className="text-5xl lg:text-6xl font-light tracking-wide mb-6">
             Begin Your<br /><em className="text-neutral-600">Bespoke Journey</em>
@@ -331,28 +259,8 @@ export default function BespokePage() {
               CONTACT US
             </button>
           </div>
-          {/* Contact Information */}
-          <div className="mt-16 flex flex-col items-center gap-4 text-neutral-700">
-            <div className="text-lg">
-              <span className="font-semibold">Phone:</span> <a href="tel:0097317254668" className="underline hover:text-neutral-900">00973 17254668</a>
-            </div>
-            <div className="text-lg">
-              <span className="font-semibold">Email:</span> <a href="mailto:finefitbh@gmail.com" className="underline hover:text-neutral-900">finefitbh@gmail.com</a>
-            </div>
-          </div>
-          {/* Google Map Embed */}
-          <div className="mt-10 flex justify-center">
-            <iframe
-              title="FineFit Location"
-              src="https://www.google.com/maps?q=26.2206,50.5822&z=15&output=embed"
-              width="100%"
-              height="350"
-              className="rounded-lg border-0 shadow-lg max-w-2xl w-full"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+       
+          
         </div>
       </section>
       <ScrollToTop />

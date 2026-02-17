@@ -17,9 +17,13 @@ const FullWidthImageSection = () => (
           sourcing of the very finest materials from around the world, continues to deliver 
           clothes of timeless elegance and unparalleled quality.
         </p>
-        <button className="border-2 border-white px-12 py-4 text-sm tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-300 scroll-reveal" style={{ animationDelay: '0.3s' }}>
+        <a
+          href="/bespoke#our-process"
+          className="border-2 border-white px-12 py-4 text-sm tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-300 scroll-reveal inline-block"
+          style={{ animationDelay: '0.3s' }}
+        >
           OUR PROCESS
-        </button>
+        </a>
       </div>
     </div>
   </section>

@@ -17,7 +17,8 @@ import ScrollToTop from '../components/ScrollToTop';
 
 
 export default function HomePage() {
-  useScrollReveal();
+  // useScrollReveal();
+  // Parallax scroll handled globally
   return (
     <div className="font-serif text-neutral-800 bg-white">
       <Header />
