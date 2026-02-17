@@ -21,7 +21,7 @@ export default function HeritageSection() {
           </div>
           <div className="relative h-[500px] animate-slideInRight overflow-hidden rounded-lg shadow-lg">
             <Image
-              src="/images/winter-tailoring.jpg"
+              src="/images/winter-tailoring.webp"
               alt="Master Tailor at Work"
               fill
               className="object-cover hover:scale-105 transition-transform duration-700"
