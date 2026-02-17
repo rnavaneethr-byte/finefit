@@ -15,7 +15,7 @@ export default function ServicesPage() {
         'Premium fabric selection',
         'Personalized styling consultation',
       ],
-      image: '/images/services2.jpg',
+      image: '/images/services2.webp',
       duration: '6-8 weeks',
     },
     {
@@ -28,7 +28,7 @@ export default function ServicesPage() {
         'Style customization',
         'Quality construction',
       ],
-      image: '/images/services3.jpg',
+      image: '/images/services3.webp',
       duration: '4-6 weeks',
     },
     {
@@ -41,7 +41,7 @@ export default function ServicesPage() {
         'Fine fabric selection',
         'Perfect fit guarantee',
       ],
-      image: '/images/services4.jpeg',
+      image: '/images/services4.webp',
       duration: '3-4 weeks',
     },
     {
@@ -54,7 +54,7 @@ export default function ServicesPage() {
         'Resizing & reshaping',
         'Damage repair',
       ],
-      image: '/images/services5.png',
+      image: '/images/services5.webp',
       duration: '1-2 weeks',
     },
     {
@@ -67,7 +67,7 @@ export default function ServicesPage() {
         'Complimentary fittings',
         'Preservation service',
       ],
-      image: '/images/services6.png',
+      image: '/images/services6.webp',
       duration: '8-10 weeks',
     },
     {
@@ -80,7 +80,7 @@ export default function ServicesPage() {
         'Expert styling advice',
         'Rental service available',
       ],
-      image: '/images/services7.jpg',
+      image: '/images/services7.webp',
       duration: '5-7 weeks',
     },
   ]
@@ -90,7 +90,7 @@ export default function ServicesPage() {
       {/* Hero */}
       <section className="relative h-[60vh] overflow-hidden">
         <Image
-          src="/images/service.png"
+          src="/images/service.webp"
           alt="Our Services"
           fill
           className="object-cover"
